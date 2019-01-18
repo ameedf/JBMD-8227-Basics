@@ -1,3 +1,4 @@
+
 package com.ameed;
 
 public class Window {
@@ -7,8 +8,19 @@ public class Window {
 	int height;
 	String bgcolor;
 
-	
-	
+	public Window(int x, int y, int width, int height) {
+		this(x, y, width, height, "red");
+		System.out.println();
+	}
+
+	public Window(int x, int y, int width, int height, String bgcolor) {
+		this.x = x;
+		this.y = y;
+		this.width = width;
+		this.height = height;
+		this.bgcolor = bgcolor;
+	}
+
 	public void setLocation(int newX, int newY) {
 		x = newX;
 		y = newY;
