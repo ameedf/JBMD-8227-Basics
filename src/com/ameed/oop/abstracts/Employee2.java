@@ -9,7 +9,5 @@ abstract public class Employee2 {
 		this.name = name;
 	}
 
-	public void work() {
-		// lshalskdh
-	}
+	public abstract void work();
 }
