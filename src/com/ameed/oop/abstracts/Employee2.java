@@ -1,5 +1,7 @@
 package com.ameed.oop.abstracts;
 
+
+
 abstract public class Employee2 {
 	protected String name;
 
@@ -7,5 +9,7 @@ abstract public class Employee2 {
 		this.name = name;
 	}
 
-	abstract public void work();
+	public void work() {
+		// lshalskdh
+	}
 }
