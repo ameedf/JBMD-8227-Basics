@@ -10,4 +10,5 @@ public class Engineer2 extends Employee2 {
 	public void work() {
 		System.out.println(name + " >>> I'm designing");
 	}
+
 }
