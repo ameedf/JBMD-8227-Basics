@@ -9,9 +9,13 @@ package com.ameed.handler.clock;
 public class Person {
 	protected String name;
 
+	
+	public Person() {
+		super();
+		this.name = "default";
+	}
+
 	public String getName() {
-		Clock c = new Clock();
-		c.hours = 9; // this is available because the visibility is "package"
 		return name;
 	}
 

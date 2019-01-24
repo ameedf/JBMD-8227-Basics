@@ -23,6 +23,7 @@ public class Demo {
 		
 		Student s = new Student();
 		s.setName("kuku");
-		s.print();
+		System.out.println(s.getName());
+		System.out.println(s.getName("Student >> "));
 	}
 }

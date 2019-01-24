@@ -7,7 +7,7 @@ package com.ameed.handler.clock;
  */
 public class Clock {
 
-	int hours;
+	private int hours;
 	private int minutes;
 	private int seconds;
 	private int milliseconds;
@@ -21,7 +21,11 @@ public class Clock {
 	}
 
 	public Clock(int hours, int minutes) {
-		this(hours, minutes, 3, 4);
+
+	}
+
+	public Clock(int hours, int minutes, int seconds) {
+		this(hours, minutes, seconds, 4);
 	}
 
 	public Clock(int hours, int minutes, int seconds, int milliseconds) {
@@ -38,7 +42,7 @@ public class Clock {
 	public void add(int hours, int minutes) {
 		///
 	}
-	
+
 	public void dummy() {
 		Person p = new Person();
 		p.name = "C";
