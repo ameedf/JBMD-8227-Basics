@@ -9,10 +9,14 @@ package com.ameed.handler.clock;
 public class Person {
 	protected String name;
 
-	
 	public Person() {
 		super();
 		this.name = "default";
+	}
+
+	public Person(String name) {
+		super();
+		this.name = name;
 	}
 
 	public String getName() {
