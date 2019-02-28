@@ -10,10 +10,8 @@ public class Saver extends AbstractClient {
 	}
 
 	@Override
-	public void run() {
-		for (int i = 0; i < getIterations(); i++) {
-			account.deposit(getFixedAmount());
-		}
+	protected void doAction() {
+		account.deposit(getFixedAmount());
 	}
 
 }

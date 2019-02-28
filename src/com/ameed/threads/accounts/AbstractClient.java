@@ -10,11 +10,20 @@ public abstract class AbstractClient implements Runnable {
 		this.account = account;
 	}
 
+	@Override
+	public void run() {
+		for (int i = 0; i < getIterations(); i++) {
+			doAction();
+		}
+	}
+
+	abstract protected void doAction();
+
 	protected int getFixedAmount() {
-		return 50;
+		return 2;
 	}
 
 	protected int getIterations() {
-		return 10000;
+		return 1000;
 	}
 }
